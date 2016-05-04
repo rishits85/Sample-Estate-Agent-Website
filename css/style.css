@@ -1,0 +1,21 @@
+/* Pseudo-elements -------------------------------- */
+@media screen and (max-width:480px)
+    {
+  body,a{
+  font-size:0.9em;
+}
+ 
+  .layout{
+    width:90%;
+  }
+  
+  .primary, .secondary{
+    float:none;
+    width:100%;
+  }
+  
+  #navigation li, h1{
+    display:block;
+    float:none;
+  }
+}

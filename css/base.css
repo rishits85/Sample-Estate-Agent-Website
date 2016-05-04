@@ -1,0 +1,204 @@
+/* Base Styles -------------------------------- */
+
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #384047;
+  margin:0;
+}
+div {
+	width: 52%;
+	margin: auto;
+}
+h1 {
+	margin-bottom: 36px;
+}
+p {
+	margin-bottom: 24px;
+  font-weight: 200;
+}
+ul {
+	font-size: 1.25rem;
+	list-style: none;
+	margin-top: 36px;
+	padding: 0;
+}
+li {
+	margin-bottom: 16px;
+  margin-right:0;
+}
+a {
+	color: #4183c4;
+}
+
+/* Substring Matching Attribute Selectors ---- */
+
+a[href^="http:"] {
+  color: #52bab3;
+  text-decoration: none;
+}
+
+a , a:visited{
+  color:#fff;
+  text-decoration:none;
+}
+
+/***********************
+ PAGE INDEX.HTML
+*************************/
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+.bg{
+  background-image: url('../img/home.jpg');
+  background-repeat:no-repeat;
+  background-size:cover;
+  width:100%;
+  min-height:600px;
+  background-position:center;
+    overflow:hidden;
+
+}
+
+#navigation{
+  background-color:rgba(0,0,0,0.7);
+  margin-bottom:30px;
+  margin-top:0;
+      text-align:right;
+
+}
+
+#navigation ul , li{
+  display:inline-block;
+  padding:6px 20px;
+  margin:0 0;
+    text-align:right;
+
+}
+
+.layout{
+  width:70%;
+  text-align:center;
+}
+
+.box{
+  padding:20px;
+  box-shadow:0 0 5px grey;
+  border-radius:7.5px;
+  margin-top:100px;
+  
+  background-color:#E8E9EC;
+/*  margin-top:5%;*/
+  height:500px;
+  margin-bottom:100px;
+  
+  
+}
+
+.inline-block{
+  display:inline-block;
+  
+}
+
+.primary{
+  width:50%;
+  float:left;
+  text-align:center
+}
+
+.secondary{
+  width:50%;
+  float:right;
+  text-align:center;
+}
+
+.translucent-black-background
+{
+/*
+    background: linear-gradient(#000,transparent 90%)
+                #fff url('../img/Skyline.jpg') no-repeat center;
+ 
+*/
+  
+  background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7) 90%),
+              linear-gradient(0deg, transparent, transparent),
+              #ffa949 url('../img/home1.jpg') no-repeat center;
+  background-size:cover;
+/*
+    background-position:center;
+*/
+    overflow:hidden;
+    width:100%;
+  height:500px;
+}
+
+.round{
+  border-radius:5%;
+  padding:30px , 30px;
+}
+
+div>img{
+  width:200px;
+  height:200px;
+  margin-top:50px;
+  
+}
+
+.large{
+  font-size:2em;
+}
+
+.contact-info li>a{
+  color:#4183c4;
+  text-decoration:underline;
+}
+
+.contact-info a
+{
+  display:inline-block;
+  min-height:20px; /*since icons 20px in size*/
+  background-repeat:no-repeat; /*coment this out and see what happens in preview*/
+  background-size:20px 20px;
+  padding:0 0 0 30px;
+  margin:0 0 10px;
+  
+}
+
+.contact-info li.cell a
+{
+ 
+  background-image:url('../img/cell.png');
+  background-position:left;
+
+  /*two dots allow to go upwards in directory. first dot takes you out from main.css to css folder. second dot takes you to root folder ie "how to     make.." folder. then specifying the path will take you to required folder*/
+}
+
+.contact-info li.office a, li.residence a
+{
+  background-image:url('../img/handset_round-2-512.png');
+    background-position:left;
+
+  /*two dots allow to go upwards in directory. first dot takes you out from main.css to css folder. second dot takes you to root folder ie "how to     make.." folder. then specifying the path will take you to required folder*/
+}
+
+.contact-info li.mail a
+{
+  background-image:url('../img/mail.png');
+    background-position:left;
+
+}
+
+.contact-info li.twitter 
+{
+  background-image:url('../img/twitter.png');
+}
+
+nav a:hover{
+  color:rgb( 114, 143, 206);
+}
+
